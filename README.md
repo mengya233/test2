@@ -23,7 +23,38 @@
 
 ```
 
+```Java
+public class Student extends Renyuan {
+	private Course course;
+
+	/**
+	 * @param id
+	 * @param name
+	 * @param sex
+	 * @param course
+	 */
+	public Student(String id, String name, String sex) {
+		super(id, name, sex);
+	}
+
+	public Course getCourse() {
+		return course;
+	}
+
+	public void setCourse(Course course) {
+		this.course = course;
+	}
+
+	private String getCourseName() {
+		if (course != null) {
+			return course.getName();
+		}
+		return "无课程";
+	}
+
+```
+
 ## 五、实验结果
-<img src="<img src="https://github.com/mengya233/test2/blob/main/shangchuan4.png?raw=true">
+
 
 ## 六、实验感想
